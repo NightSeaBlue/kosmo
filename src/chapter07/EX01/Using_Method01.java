@@ -30,6 +30,7 @@ class B {
 		}
 	}
 	
+	//5. 리턴 타입 boolean, 입력 매개변수가 없는 메서드
 	boolean call () {		//call () 를 호출할 경우 true를 돌려줌
 		
 		return true;

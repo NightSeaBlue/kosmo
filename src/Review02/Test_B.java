@@ -9,6 +9,9 @@ public class Test_B {
 		System.out.println("num을 입력하세요 >>");
 
 		int num = sc.nextInt();	// 입력받은 num 값
+		if (num <1 | num >100000) {
+			System.out.println("1에서 10만까지 제한된 수를 입력해주세요");
+		}
 		int count =0;	// 박수치는 횟수
 
 		for (int i = 1; i<=num; i++) {	// i 가 num 과 같거나 작을 경우 i를 num 까지 증가시키며 반복

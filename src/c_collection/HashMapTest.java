@@ -5,7 +5,7 @@ import java.util.*;
 class HashMapTest 
 {
 	// 전화번호를 저장할 맵변수
-	HashMap <String, String > phoneBook = new HashMap < > ();
+	HashMap <String, HashMap <String, String> > phoneBook = new HashMap < > ();
 
 
 	/*
@@ -31,12 +31,13 @@ class HashMapTest
 	{
 		//--------------------------------------------
 		// 1. 전화번호 Map에 해당 그룹이름이 없으면 추가
-		if(groupName.equals(null)) {
-		
+		if(!phoneBook.containsKey(groupName)) {
+			phoneBook.put(groupName, new HashMap <String, String> ());
 		}
 		// 2. 입력된 그룹이름으로 저장된 HashMap을 얻어옴
+		HashMap <String, String> phoneNum = phoneBook.get(groupName);
 		// 3. 그 HashMap에 전화번호와 이름을 저장
-		
+		phoneNum.put(name, tel);
 
 
 	}

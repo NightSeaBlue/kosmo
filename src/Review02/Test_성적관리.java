@@ -36,7 +36,7 @@ public class Test_성적관리 {
 				avg=sum/(double)(scount-1);
 			}
 			System.out.printf("%d 번째 학생의 총점은 %d 이고 평균은 %.2f 입니다.\n",i+1,sum,avg);
-			sum=0;
+			sum=0;		// sum을 0 으로 초기화시켜, 학생별로 합을 구할 수 있도록 초기화
 			}
 		System.out.println("============================");
 		
@@ -61,7 +61,7 @@ public class Test_성적관리 {
 	System.out.printf("국어과목 총점은 %d 이고 평균은 %.2f 입니다.\n",kscore,kavg);
 	System.out.printf("영어과목 총점은 %d 이고 평균은 %.2f 입니다.\n",escore,eavg);
 	System.out.printf("수학과목 총점은 %d 이고 평균은 %.2f입니다.\n",mscore,mavg);
-
+	sc.close();
 
 
 
